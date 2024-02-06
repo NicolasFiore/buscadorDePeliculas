@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Peliculas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxK-xd-VvM">
+                                <rect key="frame" x="10" y="74" width="373" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svy-Kl-O7n">
+                                <rect key="frame" x="10" y="128" width="373" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="65o-AQ-xbf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Año De Salida" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfi-qX-fCa">
+                                <rect key="frame" x="10" y="191" width="373" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CNa-rN-dcC">
+                                <rect key="frame" x="16" y="235" width="361" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="jGe-lU-LiH"/>
+                                    <constraint firstAttribute="height" constant="300" id="wf0-qh-tHO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="da4-Fu-cSq" userLabel="Buscar">
+                                <rect key="frame" x="338.66666666666669" y="74" width="44.333333333333314" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="medium" renderingMode="template"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buscador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qyq-Ax-Ud4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gfi-qX-fCa" secondAttribute="trailing" constant="10" id="KCP-nd-Ifw"/>
+                            <constraint firstItem="svy-Kl-O7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Ohv-Ec-7uK"/>
+                            <constraint firstItem="gfi-qX-fCa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Pq9-nf-shQ"/>
+                            <constraint firstItem="gfi-qX-fCa" firstAttribute="top" secondItem="svy-Kl-O7n" secondAttribute="bottom" constant="15" id="asf-aC-vSu"/>
+                            <constraint firstItem="da4-Fu-cSq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="cT7-bN-sh4"/>
+                            <constraint firstItem="fxK-xd-VvM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dw5-og-snm"/>
+                            <constraint firstItem="CNa-rN-dcC" firstAttribute="top" secondItem="gfi-qX-fCa" secondAttribute="bottom" constant="20" id="e4j-tz-ks6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="da4-Fu-cSq" secondAttribute="trailing" constant="10" id="fOG-mm-1Eb"/>
+                            <constraint firstItem="CNa-rN-dcC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l8B-4Z-et5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="svy-Kl-O7n" secondAttribute="trailing" constant="10" id="pbK-Ox-VDq"/>
+                            <constraint firstItem="svy-Kl-O7n" firstAttribute="top" secondItem="fxK-xd-VvM" secondAttribute="bottom" constant="20" id="poH-PD-GyH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fxK-xd-VvM" secondAttribute="trailing" constant="10" id="wqK-iJ-lv8"/>
+                            <constraint firstItem="fxK-xd-VvM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="z7o-Om-A6p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="año" destination="gfi-qX-fCa" id="fta-Kw-hHj"/>
+                        <outlet property="imagen" destination="CNa-rN-dcC" id="NdF-ru-cP1"/>
+                        <outlet property="nombrePelicula" destination="fxK-xd-VvM" id="0RV-Th-2HU"/>
+                        <outlet property="titulo" destination="svy-Kl-O7n" id="B2q-lV-Rha"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
